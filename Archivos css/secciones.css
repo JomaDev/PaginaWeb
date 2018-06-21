@@ -1,49 +1,44 @@
-@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-@import 'https://fonts.googleapis.com/css?family=Open+Sans';
-* {
-  box-sizing: border-box;
-}
-img {
+img{
     width: 100%;
-    height: 70%;
-}
-body {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-}
-h2 {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  letter-spacing: 1.5px;
-}
-.contenedor {
-  margin: auto;
-  width: 80%;
-}
-/*-------------------Estilos del header-------------------*/
-.header {
-  height: 60px;
+    height: 100%;
 }
 
-/*-----------------Estilos de info-----------------*/
-.info__columna {
-  background-color:black;
-  border: double;
-  color: white;
-  margin-bottom: 50px;
-  margin: 30px;
-  width: 40%;
-  height: 350px;
-}
-.info{
+.contenedor {
+    background: grey;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+
 }
-.info__titulo{
-    font-size: 40px;
-    text-align: center;
-    font-size: 30px;
-    margin: 5px 0;
+
+.columna {
+    flex:15%;
+    margin-left: 1%;
+    max-width: 30%;
+    padding: 0 5%;
+	text-align: center;
 }
-p{
-    margin-left: 15px;
+
+.columna img {
+    margin-top:21%;
+}
+
+@media screen and (max-width: 700px) {
+  .columna {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .columna {
+    flex: 100%;
+    max-width: 100%;
+  }
+    img{
+        width: 100%;
+        height: 100%;
+    }
 }

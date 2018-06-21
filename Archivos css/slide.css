@@ -8,7 +8,7 @@
     overflow: hidden; /*Oculta todo lo que no se desea mostrar*/
     box-shadow: 0 0 0 10px #fff,
                 0 15px 50px; /*Estilo que crea un efecto de sombra y un cuadro */
-    z-index: -1;
+            
 }
 
 #slider{
