@@ -14,7 +14,7 @@
     border-radius: 10px;
 }
 
-.form #nom, #ema, #emp, #asun, #mens{
+.form #nom, #ema, #emp, #asun, #mens, #tel{
     width: 45%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 2.5%;

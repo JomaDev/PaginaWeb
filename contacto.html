@@ -32,17 +32,19 @@
 		</nav>
 	</header>
     <div class="Contenido wrapper fond"><h1>CONTACTO</h1>
-        <form class="form">
+        <form class="form" action="enviar.php" method="POST">
             <h3>Ingrese su nombre *</h3>
-            <input type="text" name="nombre" id="nom">
+            <input type="text" name="nombre" id="nom" required>
             <h3>Ingrese su direccion de correo electrónico *</h3>
-            <input type="email" name="email" id="ema">
+            <input type="email" name="email" id="ema" required>
             <h3>Empresa *</h3>
-            <input type="text" name="empresa" id="emp">
+            <input type="text" name="empresa" id="emp" required>
+            <h3>Telefono *</h3>
+            <input type="text" name="telefono" id="tel" required>
             <h3>Asunto *</h3>
-            <input type="text" name="asunto" id="asun">
+            <input type="text" name="asunto" id="asun" required>
             <h3>Mensaje *</h3>
-            <textarea name="mensaje" id="mens"></textarea></br>
+            <textarea name="mensaje" id="mens" required></textarea></br>
             <input type="submit" name="enviar" id="envi" value="Enviar mensaje">
         </form>
     </div>
