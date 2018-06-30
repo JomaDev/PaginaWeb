@@ -1,11 +1,11 @@
 
 #derecha{
     float: right;
-    width: 48%;
+    width: 49%;
 }
 #izquierda{
     float: left;
-    width: 48%;
+    width: 49%;
 }
 
 @media screen and (max-width: 1055px){
