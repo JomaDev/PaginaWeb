@@ -46,6 +46,7 @@
                 <h2>{$p['id']}</h2>
                 <p>{$p['comentario']}</p>
             </article>";
+            
         }
         ?>
         <article>
