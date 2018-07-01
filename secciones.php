@@ -38,6 +38,8 @@
   </header>
   <section class="contenedor">
     <div class="columna">
+
+
        <?php 
         $prod=$produc->find();
         foreach($prod as $p){
@@ -46,8 +48,9 @@
                 <h2>{$p['id']}</h2>
                 <p>{$p['comentario']}</p>
             </article>";
-            
         }
+
+        
         ?>
         <article>
             <img src="Images/cascoybotas.jpg">
