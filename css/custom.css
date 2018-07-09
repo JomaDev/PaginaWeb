@@ -26,4 +26,33 @@ footer ul{text-decoration: none; list-style-type: none;}
 .mapa{
     text-align: center;
     width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.jumcent{
+    text-align: center;
+    width: 100%;
+}
+.btnmarg{
+    margin-bottom: 2%;
+}
+.logose{
+    margin-left:1%; 
+    margin-top: 2%;
+    margin-bottom: 1%;
+    display: block;
+    float: right;
+    width: 45%;
+    height: 25%;
+}
+.presentacion{
+    margin: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: block;
+    text-align: center;
+}
+.presentacion h2,p {
+    margin-top: 1%;
+    text-align: justify;
 }
