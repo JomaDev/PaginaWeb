@@ -5,6 +5,8 @@
   <link rel="stylesheet" href="css/bootstrap4.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/productos.css" />
+
   <title>SEREGRAL VENTAS</title>
 </head>
 
@@ -36,14 +38,14 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="nosotros.html">Nosotros </a>
           </li>
-            <li class="nav-item dropdown">
-              <div class="btn-group">
+          <li class="nav-item dropdown active">
+          <div class="btn-group">
                   <a class="nav-link" href="productos.php">Productos </a>
                   <a class="nav-link dropdown-toggle dropdown-toggle-split" role="button" data-toggle="dropdown"></a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -59,7 +61,7 @@
                     <a class="dropdown-item" href="#">Trafico Reflectivos</a>
                     <a class="dropdown-item" href="#">Equipos de Emergencia</a>
                   </div>    
-                </div>            
+                </div>   
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contacto.html">Contacto</a>
@@ -90,7 +92,7 @@
       </div>
       <div class="carousel-item">
         <img class="d-block img-fluid" src="img/casco2.jpg" alt="Second slide">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-none d-md-block ">
           <h3>CASCO PROTECCIÓN 2</h3>
           <h4>Reserva tus nuevos cascos de protección!!!!!</h4>
           <input type="button" value="Mas Informacion" class="btn btn-primary">
@@ -115,6 +117,38 @@
       <span class="sr-only">Siguiente</span>
     </a>
   </div>
+  <div class="row tablapro">
+    <?php
+
+    $connect = mysqli_connect('localhost', 'root', '', 'tienda');
+    $query = 'SELECT * FROM products ORDER by id ASC';
+    $result = mysqli_query($connect, $query);
+
+    if ($result):
+        if(mysqli_num_rows($result)>0):
+            while($product = mysqli_fetch_assoc($result)):
+            //print_r($product);
+            ?>
+            <div class="col-sm-4 col-md-3" >
+                <form method="post" action="cart.php?action=add&id=<?php echo $product['id']; ?>">
+                    <div class="products">
+                        <img src="img/<?php echo $product['image']; ?>" class="img-fluid" />
+                        <h4 class="text-info"><?php echo $product['name']; ?></h4>
+                        <h4>$ <?php echo $product['price']; ?></h4>
+                        <!--<input type="text" name="quantity" class="form-control" value="1" />-->
+                        <input type="hidden" name="name" value="<?php echo $product['name']; ?>" />
+                        <input type="hidden" name="price" value="<?php echo $product['price']; ?>" />
+                        <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-success"
+                               value="Leer Mas..." />
+                    </div>
+                </form>
+            </div>
+            <?php
+            endwhile;
+        endif;
+    endif;   
+    ?>     
+    </div>
 
   <footer>
     <div class="container-fluid pt-5 pb-5 bg-dark text-light">
