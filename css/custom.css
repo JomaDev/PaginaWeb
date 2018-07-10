@@ -56,3 +56,11 @@ footer ul{text-decoration: none; list-style-type: none;}
     margin-top: 1%;
     text-align: justify;
 }
+.formali{
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.botrad{
+    border-radius: 20px;
+    width: 200px;
+}
