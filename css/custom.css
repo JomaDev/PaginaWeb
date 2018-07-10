@@ -26,24 +26,24 @@ footer ul{text-decoration: none; list-style-type: none;}
 .mapa{
     text-align: center;
     width: 100%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 .jumcent{
     text-align: center;
     width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .btnmarg{
     margin-bottom: 2%;
 }
 .logose{
     margin-left:2%; 
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     display: block;
     float: right;
-    width: 45%;
-    height: 25%;
+    width: 46%;
 }
 .presentacion{
     margin: auto;
