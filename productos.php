@@ -83,7 +83,7 @@
     </ol>
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
-        <img class="d-block img-fluid" src="img/casco1.jpg" alt="First slide">
+        <img class="d-block img-fluid" src="img/slide_01.jpg" alt="First slide">
         <div class="carousel-caption d-none d-md-block">
           <h3>CASCO PROTECCIÓN</h3>
           <h4>Reserva tus nuevos cascos de protección!!!!!</h4>
@@ -91,7 +91,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block img-fluid" src="img/casco2.jpg" alt="Second slide">
+        <img class="d-block img-fluid" src="img/slide_02.jpg" alt="Second slide">
         <div class="carousel-caption d-none d-md-block ">
           <h3>CASCO PROTECCIÓN 2</h3>
           <h4>Reserva tus nuevos cascos de protección!!!!!</h4>
@@ -99,7 +99,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block img-fluid" src="img/ropa1.jpg" alt="Third slide">
+        <img class="d-block img-fluid" src="img/slide_03.jpg" alt="Third slide">
         <div class="carousel-caption d-none d-md-block">
           <h4>ROPA REFLECTANTE</h4>
           <h4>Reserva tu nueva ropa reflectante!!!!!</h4>
