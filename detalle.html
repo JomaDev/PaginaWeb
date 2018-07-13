@@ -7,7 +7,6 @@
     
     
     
-    
     <!--//////////////////--BOOTSTRAP--\\\\\\\\\\\\\\\\\\\\-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     
@@ -19,28 +18,30 @@
     <!--//////////////////--MENU--\\\\\\\\\\\\\\\\\\\\-->
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+        
 </head>
 <body>
 <!--//////////////////--BARRA SUPEROPR--\\\\\\\\\\\\\\\\\\\\-->
-    <div class="container-fluid bg-dark header-top d-none d-md-block">
-        <div class="container">
-        <div class="row text-light pt-2 pb-2">
-            <div class="col-md-5">
-            <i class="fa fa-envelope-o" aria-hidden="true"></i> ventas@seregral.com</div>
-            <div class="col-md-3">
+<div class="container-fluid bg-dark header-top d-none d-md-block">
+    <div class="container">
+      <div class="row text-light pt-2 pb-2">
+        <div class="col-md-5">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i> ventas@seregral.com</div>
+        <div class="col-md-3">
 
-            </div>
+        </div>
 
-            <div class="col-md-2">
-            <i class="fa fa-user-o" aria-hidden="true"></i> Cuenta </div>
-            <div class="col-md-2">
-            <i class="fa fa-cart-plus" aria-hidden="true"></i> Carrito - $ 0.00</div>
-        </div>
-        </div>
+        <div class="col-md-2">
+          <i class="fa fa-user-o" aria-hidden="true"></i> Cuenta </div>
+        <div class="col-md-2">
+          <i class="fa fa-cart-plus" aria-hidden="true"></i> Carrito - $ 0.00</div>
+      </div>
     </div>
+  </div>
 
-    <div class="container-fluid bg-black">
+<div class="super_container">
+<!--//////////////////--MENU BARRA--\\\\\\\\\\\\\\\\\\\\-->
+  <div class="container-fluid bg-black">
         <nav class="container navbar navbar-expand-lg navbar-dark bg-black">
             <a class="navbar-brand" href="#">SEREGRAL</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -53,13 +54,9 @@
                     <li class="nav-item ">
                         <a class="nav-link" href="index.html">Inicio </a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="nosotros.html">Nosotros </a>
-                    </li>
                     <li class="nav-item dropdown">
-                            <div class="btn-group">
-                                    <a class="nav-link" href="productos.php">Productos </a>
-                                    <a class="nav-link dropdown-toggle dropdown-toggle-split" role="button" data-toggle="dropdown"></a>
+                            <div class="btn-group" style="display: block;">
+                                <a class="nav-link dropdown-toggle dropdown-toggle-split" role="button" href="productos.php" data-toggle="dropdown">Productos</a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                       <a class="dropdown-item" href="#">Proteccion Visual</a>
                                       <a class="dropdown-item" href="#">Proteccion Respiratoria</a>
@@ -73,7 +70,10 @@
                                       <a class="dropdown-item" href="#">Trafico Reflectivos</a>
                                       <a class="dropdown-item" href="#">Equipos de Emergencia</a>
                                     </div>    
-                                  </div>   
+                            </div>   
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contacto.html">Contacto</a>
@@ -84,6 +84,7 @@
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                 </form>
             </div>
+            
         </nav>
     </div>
 
@@ -176,7 +177,7 @@
 									<p>Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut...</p>
 								</div>
 								<div class="tab_image">
-									<img src="img/casco4.jpg" alt="">
+									<img src="img/casco6.jpg" alt="">
 								</div>
 								<div class="tab_text_block">
 									<h2>Pocket cotton sweatshirt</h2>
@@ -220,6 +221,25 @@
 		</div>
 	</div>
 </div>
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4">
+       <div style="height: 50px;width: 100%;"></div>
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">&larr; Anterior</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">...</a></li>
+          <li class="page-item"><a class="page-link" href="#">Siguiente &rarr;</a></li>
+        </ul> 
+      </div>
+      <div class="col-4"></div>
+  </div>
+</div>
+<div style="height: 50px;width: 100%;"></div>
 
 
   <footer>
@@ -298,7 +318,8 @@
         </div>
     </div>
   </footer>
-
+  
+  
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
